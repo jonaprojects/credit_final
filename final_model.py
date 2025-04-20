@@ -129,8 +129,8 @@ predictions['revol_util_class'] = int(pd.qcut(yr_pred_test, q=3, labels=[0,1,2])
 predictions['annual_inc_class'] = int(pd.qcut(yi_pred_test, q=3, labels=[0,1,2]).value_counts().idxmax())
 
 # ===== FINAL SMART DECISION BASED ON 5 FACTORS =====
-print(f"Predicted revol_util_class: {predictions['revol_util_class']}")
-print(f"Predicted annual_inc_class: {predictions['annual_inc_class']}")
+# print(f"Predicted revol_util_class: {predictions['revol_util_class']}")
+# print(f"Predicted annual_inc_class: {predictions['annual_inc_class']}")
 
 
 from sklearn.metrics import accuracy_score
